@@ -89,11 +89,11 @@ function App() {
       const currentPlayer = deriveActivePlayer(prevTurns);
 
       const updatedTurns = [
-        { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
+        { square: { row: rowIndex, col: colIndex }, player: currentPlayer }, // structure of gameTurns
         ...prevTurns,
       ];
 
-      // Use return when using curly braces here!
+      // Use return when using curly braces in anonymous functions!
       return updatedTurns;
     });
   }

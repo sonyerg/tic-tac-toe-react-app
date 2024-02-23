@@ -16,9 +16,11 @@ export default function GameBoard({ onSelectSquare, board }) {
 
   return (
     <ol id="game-board">
+      {/* this is applied per square in the 6x6 grid of the game! */}
       {board.map((row, rowIndex) => (
         <li key={rowIndex}>
           <ol>
+            {/* the playerSymbol is inside the board(gameBoard/gameTurns) */}
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
                 {/* <button onClick={() => handleSelectSquare(rowIndex, colIndex)}> */}
